@@ -1,5 +1,5 @@
 //program related to for loop
-import java.util.*;
+import java.util.Scanner;
 public class For {
    public static void main(String[]args) {
 	         System.out.println("Enter any number for checking weather no is prime or not");
