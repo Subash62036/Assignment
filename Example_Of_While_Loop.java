@@ -1,11 +1,7 @@
-import java.util.*;
-public class Loop
-{
-  public static void main(String[]args)
-  {
-    while(true)
-       {
-       
+import java.util.Scanner;
+public class Example_Of_While_Loop {
+  public static void main(String[]args) {
+    while(true) {
          System.out.println("Enter any two number");
          Scanner ob=new Scanner(System.in);
          int n1=ob.nextInt();
@@ -13,8 +9,7 @@ public class Loop
          System.out.println("Enter 1-Add,2-Substract,3-Mul,4-Divide,5-Module,6-Exit");
          Scanner obj=new Scanner(System.in);
          int a=obj.nextInt();
-         switch(a)
-           {
+         switch(a) {
              case 1:
                   System.out.println("Sum of given no =" + (n1+n2));
                   break;
@@ -36,10 +31,8 @@ public class Loop
                  System.out.println("Please Enter valid input!!! try again");
                  break;
            }
-      }
-
- }
-
+    }
+  }
 }
      
                  
