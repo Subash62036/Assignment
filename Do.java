@@ -7,8 +7,9 @@ public class Do {
       Scanner ob=new Scanner(System.in);
        int term=ob.nextInt();
         do {
-	    i++;
+	    
             sum=sum+i; 
+	    i++;
 	    }while(i<term);
 		 System.out.println("Sum Of Natural Series is = " + sum);
 	 }
