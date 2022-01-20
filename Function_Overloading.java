@@ -1,5 +1,5 @@
 /*Create a sample application to implement the feature of PolyMorphism*/
-public class Poly{
+public class Function_Overloading {
        public void Human(String name,int age,float salary)
 	   {
 	       String Name=name;
