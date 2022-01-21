@@ -1,9 +1,9 @@
-import java.awt.*;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class LinkedListExample {
-    LinkedList<String> Name = new LinkedList<String>();
+    LinkedList<String> Name = new LinkedList<>();
 
     public void Insert() {
         System.out.println("Enter how many name you want to entered like 1,2,....");
@@ -13,6 +13,7 @@ public class LinkedListExample {
             Name.add(sc.nextLine());
         }
         System.out.println(Name);
+
     }
 
     public void Remove() {
@@ -34,11 +35,12 @@ public class LinkedListExample {
     }
 
     public static void main(String[] args) {
-        System.out.println("Enter 1-Inseration ,2- Remove single value ,3- Romove All value 4- Exit");
-        Scanner num = new Scanner(System.in);
-        int a = num.nextInt();
+
         LinkedListExample object = new LinkedListExample();
         while (true) {
+            System.out.println("Enter 1-Inseration ,2- Remove single value ,3- Romove All value 4- Exit");
+            Scanner num = new Scanner(System.in);
+            int a = num.nextInt();
             switch (a) {
                 case 1:
                     object.Insert();
@@ -61,3 +63,4 @@ public class LinkedListExample {
 
     }
 }
+
