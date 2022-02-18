@@ -9,9 +9,10 @@ import java.util.List;
 
 @Service
 public class DeptService implements CrudOpearationsMethods {
-    private DeptRepository repo;
+    private final DeptRepository repo;
 
     public DeptService(DeptRepository repo) {
+
         this.repo = repo;
     }
 
@@ -22,6 +23,7 @@ public class DeptService implements CrudOpearationsMethods {
 
     @Override
     public DeptEntity updateDeptInfo(DeptEntity Department) {
+
         return repo.save(Department);
     }
 
@@ -31,7 +33,8 @@ public class DeptService implements CrudOpearationsMethods {
     }
 
     @Override
-    public void deleteDeptInfo(int Id) {
+    public void deleteDeptInfo(Integer Id) {
+
         repo.deleteById(Id);
     }
 }

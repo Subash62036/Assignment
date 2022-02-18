@@ -3,12 +3,12 @@ package com.example.crudeoperation.controller;
 
 import com.example.crudeoperation.entity.DeptEntity;
 import com.example.crudeoperation.service.DeptService;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+
 @RestController
 @CrossOrigin("*")
 
@@ -36,9 +36,11 @@ public class DeptController {
         return serviceObj.findAllDeptInfo();
     }
     // Delete data using Delete
-    @DeleteMapping(value = "deleteData")
-    public void deleteDeptInfo(int id){
-        serviceObj.deleteDeptInfo(id);
+    @DeleteMapping("deleteData/{id}")
+    public String deleteDeptInfo(@PathVariable("id") Integer deptId){
+
+        serviceObj.deleteDeptInfo(deptId);
+        return "Deleted data Successfully !!!";
     }
 
 }
